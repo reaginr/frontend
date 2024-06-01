@@ -179,13 +179,3 @@ if locals().get("DISABLED_APPS"):
         locals()[_key] = tuple(
             [_item for _item in locals()[_key] if not _item.startswith(_app + ".")]
         )
-DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.mysql",
-        "NAME": "MySQL80",  # noqa
-        "USER": "root",
-        "PASSWORD": "159753",
-        "HOST": "localhost",
-        "PORT": "3306",
-    },
-}
